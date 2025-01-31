@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 function UsersCard({name,image,age,university}) {
   return (
     <div className="px-5 py-2 w-[300px] h-[300px] border gap-2 flex flex-col justify-center items-center text-center">
