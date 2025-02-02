@@ -2,7 +2,9 @@
 // import ApiFetch from "./Components/02-Users-Api-Fetch/ApiFetch"
 // import Counter from "./Components/03-Counter/Counter"
 
-import ChangeFontSize from "./Components/04-Font-Size-Change/ChangeFontSize"
+import StyleChanger from "./Components/06-Style-Changer/StyleChanger"
+
+// import ChangeFontSize from "./Components/04-Font-Size-Change/ChangeFontSize"
 
 function App() {
 
@@ -11,7 +13,8 @@ function App() {
       {/* <ChangeColor /> */}
       {/* <ApiFetch className=' mb-10' /> */}
       {/* <Counter /> */}
-      <ChangeFontSize />
+      {/* <ChangeFontSize /> */}
+      <StyleChanger />
     </div>
   )
 }
