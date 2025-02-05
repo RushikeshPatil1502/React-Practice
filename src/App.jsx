@@ -2,7 +2,9 @@
 // import ApiFetch from "./Components/02-Users-Api-Fetch/ApiFetch"
 // import Counter from "./Components/03-Counter/Counter"
 
-import Homepage from "./Components/07-Homepage/Homepage"
+import Home from "./Components/08-AnimeProject/Home"
+
+// import Homepage from "./Components/07-Homepage/Homepage"
 
 // import StyleChanger from "./Components/06-Style-Changer/StyleChanger"
 
@@ -21,7 +23,9 @@ function App() {
           {/* <StyleChanger /> */}
      {/* </div> */}
 
-     <Homepage />
+     {/* <Homepage /> */}
+
+     <Home />
 
     </>
   )
