@@ -2,7 +2,9 @@
 // import ApiFetch from "./Components/02-Users-Api-Fetch/ApiFetch"
 // import Counter from "./Components/03-Counter/Counter"
 
-import FormProject from "./Components/09-FormProject/FormProject"
+import FormAnime from "./Components/10-Form-Anime/FormAnime"
+
+// import FormProject from "./Components/09-FormProject/FormProject"
 
 // import Home from "./Components/08-AnimeProject/Home"
 
@@ -17,7 +19,8 @@ function App() {
   return (
     <>
     
-     <div className="h-screen flex justify-center items-center">
+     <div>
+     {/* h-screen flex justify-center items-center */}
           {/* <ChangeColor /> */}
           {/* <ApiFetch className=' mb-10' /> */}
           {/* <Counter /> */}
@@ -29,7 +32,9 @@ function App() {
 
      {/* <Home /> */}
 
-        <FormProject />
+        {/* <FormProject /> */}
+
+        <FormAnime />
      </div>
     </>
   )
