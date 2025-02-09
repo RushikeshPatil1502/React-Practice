@@ -26,7 +26,8 @@ function RegisterForm() {
 
 
   return (
-   <>
+   <div className="flex flex-col gap-4">
+        <h1 className="text-2xl font-bold">Register Form</h1>
         <div className="p-5 bg-red-100 border rounded-xl w-fit">
                 <CommonForm 
                 formData = {RegFormData}
@@ -39,10 +40,8 @@ function RegisterForm() {
                         <div>{submittedRegFormData.name}</div>
                         <div>{submittedRegFormData.email}</div>
                 </div>
-        </div>
-
-        
-   </> 
+        </div>       
+   </div> 
     
   )
 }

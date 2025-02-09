@@ -2,6 +2,7 @@
 // import ApiFetch from "./Components/02-Users-Api-Fetch/ApiFetch"
 // import Counter from "./Components/03-Counter/Counter"
 
+import LoginForm from "./Components/11-Dynamic-Form/LoginForm"
 import RegisterForm from "./Components/11-Dynamic-Form/RegisterForm"
 
 // import FormProject from "./Components/09-FormProject/FormProject"
@@ -35,8 +36,9 @@ function App() {
         {/* <FormProject /> */}
 
         {/* <FormAnime /> */}
-        <div className="p-5">
+        <div className="p-5 flex gap-4">
            <RegisterForm />
+           <LoginForm />
         </div>
      </div>
     </>
