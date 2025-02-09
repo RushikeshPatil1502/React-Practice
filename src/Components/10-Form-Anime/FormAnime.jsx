@@ -51,7 +51,7 @@ function FormAnime() {
     }
 
   return (
-    <div>
+    <div className="w-full flex flex-col justify-center items-center">
         <form onSubmit={() => {
             handleSubmit(event)
             fetchAnimeByName(formData.name)
@@ -78,7 +78,7 @@ function FormAnime() {
                     <p className="text-sm text-gray-600 mt-2">Episodes: {data.episodes}</p>
                     </div>
                 </div>
-                ) : <h1>No animes found</h1>
+                ) : <h1 className="w-full flex justify-center items-center text-center">No animes found</h1>
             }
         </ul>
     

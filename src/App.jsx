@@ -2,7 +2,7 @@
 // import ApiFetch from "./Components/02-Users-Api-Fetch/ApiFetch"
 // import Counter from "./Components/03-Counter/Counter"
 
-import FormAnime from "./Components/10-Form-Anime/FormAnime"
+import RegisterForm from "./Components/11-Dynamic-Form/RegisterForm"
 
 // import FormProject from "./Components/09-FormProject/FormProject"
 
@@ -34,7 +34,10 @@ function App() {
 
         {/* <FormProject /> */}
 
-        <FormAnime />
+        {/* <FormAnime /> */}
+        <div className="p-5">
+           <RegisterForm />
+        </div>
      </div>
     </>
   )
