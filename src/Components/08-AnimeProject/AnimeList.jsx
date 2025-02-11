@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Button from "../ButtonComponent/Button";
 import AnimeDetails from "./AnimeDetails";
 

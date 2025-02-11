@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import AnimeList from "./AnimeList";
 
-function Home() {
+function AnimeHome() {
   const [animeList, setAnimeList] = useState([]);
   const [loadingState, setLoadingState] = useState(false);
   const [selectedAnimeId, setSelectedAnimeId] = useState(null); // Track which anime is selected
@@ -71,4 +71,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default AnimeHome;
