@@ -11,6 +11,7 @@ import FormProject from "./Components/09-FormProject/FormProject"
 import FormAnime from "./Components/10-Form-Anime/FormAnime"
 import RegisterForm from "./Components/11-Dynamic-Form/RegisterForm"
 import LoginForm from "./Components/11-Dynamic-Form/LoginForm"
+import ApiuseFetch from "./Components/13-Custom-hook/apiuseFetch"
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
             <Link to={'/form'}>Form Project</Link>
             <Link to={'/anime-search'}>AnyAnime</Link>
             <Link to={'/common-form'}>CommonForm</Link>
+            <Link to={'/api-use-fetch'}>ApiUseFetch</Link>
         </div>
 
 
@@ -53,6 +55,7 @@ function App() {
                 <LoginForm />
             </div>
           } />
+          <Route path="/api-use-fetch" element={<ApiuseFetch />} />
         </Routes>
 
         
