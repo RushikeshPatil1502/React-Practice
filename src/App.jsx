@@ -12,6 +12,7 @@ import FormAnime from "./Components/10-Form-Anime/FormAnime"
 import RegisterForm from "./Components/11-Dynamic-Form/RegisterForm"
 import LoginForm from "./Components/11-Dynamic-Form/LoginForm"
 import ApiuseFetch from "./Components/13-Custom-hook/apiuseFetch"
+import CustomCounter from "./Components/13-Custom-hook/CustomCounter"
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
             <Link to={'/anime-search'}>AnyAnime</Link>
             <Link to={'/common-form'}>CommonForm</Link>
             <Link to={'/api-use-fetch'}>ApiUseFetch</Link>
+            <Link to={'/custom-hook-counter'}>customHookCounter</Link>
         </div>
 
 
@@ -56,6 +58,7 @@ function App() {
             </div>
           } />
           <Route path="/api-use-fetch" element={<ApiuseFetch />} />
+          <Route path="/custom-hook-counter" element={<CustomCounter />} />
         </Routes>
 
         
