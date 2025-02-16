@@ -13,7 +13,7 @@ function ANMiTopAnimeList() {
    
   return (
     <div className="flex flex-col justify-center items-center mt-10">
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="flex flex-col md:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {
             data?.data && data?.data.length > 0 ?
             data?.data.filter(topAnime=> topAnime?.score > 8).map(topAnime=>
