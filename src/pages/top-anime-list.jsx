@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useFetch from "../hooks/use-fetch"
 
 function ANMiTopAnimeList() {
@@ -20,7 +21,10 @@ function ANMiTopAnimeList() {
                             <img src={topAnime?.images.jpg.image_url} alt="anime" className="w-full h-[400px] object-cover rounded-md" />
                             <h1 className="text-xl font-semibold mt-2">{topAnime?.title}</h1>
                             <p className="text-lg font-semibold">Rating: {topAnime?.score}</p>
-                            <button className="px-3 py-1 border mt-3 rounded-xl hover:bg-gray-200 transition">Details</button>
+                            <div className="px-3 py-1 border mt-3 rounded-xl hover:bg-gray-200 transition">
+                               <Link to={`/ANMi/ANMi-home-page/anime-details/${topAnime.mal_id}`}>Details</Link>
+                            </div>
+
                 </div>
             )
             : null

@@ -16,6 +16,7 @@ import CustomCounter from "./Components/13-Custom-hook/CustomCounter"
 import ANMiHomePage from "./pages/home-page"
 import ANMiTopAnimeList from "./pages/top-anime-list"
 import Layout from "./Components/14-ANMiNavbar/Layout"
+import ANMiDetails from "./pages/anime-details"
 
 function App() {
 
@@ -66,6 +67,7 @@ function App() {
           <Route path="/ANMi" element={<Layout />}>
              <Route path="ANMi-home-page" element={<ANMiHomePage />} />
              <Route path="ANMi-top-anime" element={<ANMiTopAnimeList />} />
+             <Route path="ANMi-home-page/anime-details/:id" element={<ANMiDetails />} />
           </Route>  
         </Routes>       
      </div>
