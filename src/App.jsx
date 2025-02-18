@@ -17,6 +17,7 @@ import ANMiHomePage from "./pages/home-page"
 import ANMiTopAnimeList from "./pages/top-anime-list"
 import Layout from "./Components/14-ANMiNavbar/Layout"
 import ANMiDetails from "./pages/anime-details"
+import SearchedAnime from "./pages/searched-anime"
 
 function App() {
 
@@ -68,6 +69,7 @@ function App() {
              <Route path="ANMi-home-page" element={<ANMiHomePage />} />
              <Route path="ANMi-top-anime" element={<ANMiTopAnimeList />} />
              <Route path="ANMi-home-page/anime-details/:id" element={<ANMiDetails />} />
+             <Route path="searched-anime/:name" element={<SearchedAnime />} />
           </Route>  
         </Routes>       
      </div>
