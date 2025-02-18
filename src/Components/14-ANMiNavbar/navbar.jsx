@@ -28,7 +28,7 @@ function ANMiNavbar() {
         </div>
         {/* <div> */}
         <div className="flex justify-between items-center gap-2">
-          <form className="flex justify-between items-center gap-2" 
+          <form className="md:flex hidden justify-between items-center gap-2" 
           onSubmit={(event)=> handleOnclick(event)}>
             <input 
             className="px-3 border rounded-xl md:flex hidden border-black text-gray-800" 
