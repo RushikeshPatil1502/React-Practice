@@ -18,6 +18,7 @@ import ANMiTopAnimeList from "./pages/top-anime-list"
 import Layout from "./Components/14-ANMiNavbar/Layout"
 import ANMiDetails from "./pages/anime-details"
 import SearchedAnime from "./pages/searched-anime"
+import UseRefHook from "./Components/15-UseRef/useRef-hook"
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
             <Link className="px-3 py-1 border rounded-xl" to={'/api-use-fetch'}>ApiUseFetch</Link>
             <Link className="px-3 py-1 border rounded-xl" to={'/custom-hook-counter'}>customHookCounter</Link>
             <Link className="px-3 py-1 border rounded-xl" to={'/ANMi/ANMi-home-page'}>ANMi</Link>
+            <Link className="px-3 py-1 border rounded-xl" to={'/use-ref'}>UseRefHook</Link>
         </div>
 
 
@@ -70,7 +72,9 @@ function App() {
              <Route path="ANMi-top-anime" element={<ANMiTopAnimeList />} />
              <Route path="ANMi-home-page/anime-details/:id" element={<ANMiDetails />} />
              <Route path="searched-anime/:name" element={<SearchedAnime />} />
-          </Route>  
+          </Route>
+
+          <Route path="/use-ref" element={<UseRefHook />} />  
         </Routes>       
      </div>
     </>
