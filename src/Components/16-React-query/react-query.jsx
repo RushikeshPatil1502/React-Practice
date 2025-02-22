@@ -28,23 +28,26 @@ function FetchApiReactQuery() {
 
     const {data , isFetching , refetch} = useQuery({
       queryKey: ['recipes'],
-      queryFn: getRecipes
+      queryFn: getRecipes,
+      refetchOnWindowFocus: false, // ❌ No refetch when switching tabs
+      refetchOnReconnect: false,   // ❌ No refetch when internet reconnects
     })
+
+    console.log(data);
 
     const { mutateAsync: handleMutationAddNewRecipe } = useMutation({
       mutationFn: addRecipes,
-      onSuccess: (newRecipe) => {
-        queryClient.setQueryData(['recipes'], (oldData) => {
-          if (!oldData || !oldData.recipes) return { recipes: [newRecipe] };
-    
+      onSuccess: (newRecipes) => {
+        queryClient.setQueryData(['recipes'] , (oldData)=>{
+          if(!oldData || !oldData.recipes) return { recipes: newRecipes}
+
           return {
             ...oldData,
-            recipes: [...oldData.recipes, { id: oldData.recipes.length + 1, ...newRecipe }],
-          };
-        });
-      },
+            recipes: [...oldData.recipes , {id: oldData.recipes.length + 1, ...newRecipes}]
+          }
+        })
+      }
     });
-    
     
     async function handleAddNewRecipe() {
       await handleMutationAddNewRecipe(recipeTitle)
@@ -64,7 +67,7 @@ function FetchApiReactQuery() {
        </div>
       {
          data?.recipes && data?.recipes?.length > 0 ?
-         data?.recipes?.filter(recipe=> recipe?.id < 5).map(recipe=>
+         data?.recipes?.filter(recipe=> recipe?.id > 25).map(recipe=>
           <div key={recipe?.id} className="px-4 py-2 shadow rounded w-full">
             <h1>{recipe?.name}</h1>
           </div>
