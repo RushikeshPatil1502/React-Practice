@@ -1,5 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { useState } from "react"
+import FetchReactQueryIdData from "./react-query-id"
 
 async function getRecipes() {
   await new Promise((resolve)=> setTimeout(resolve,1000))
@@ -74,7 +75,9 @@ function FetchApiReactQuery() {
          )
          : null
       }
-      <button onClick={()=> refetch()}>Refetch</button>
+      <button className="mb-20" onClick={()=> refetch()}>Refetch</button>
+
+      <FetchReactQueryIdData />
     </div>
   )
 }
