@@ -19,6 +19,7 @@ import Layout from "./Components/14-ANMiNavbar/Layout"
 import ANMiDetails from "./pages/anime-details"
 import SearchedAnime from "./pages/searched-anime"
 import UseRefHook from "./Components/15-UseRef/useRef-hook"
+import FetchApiReactQuery from "./Components/16-React-query/react-query"
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
             <Link className="px-3 py-1 border rounded-xl" to={'/custom-hook-counter'}>customHookCounter</Link>
             <Link className="px-3 py-1 border rounded-xl" to={'/ANMi/ANMi-home-page'}>ANMi</Link>
             <Link className="px-3 py-1 border rounded-xl" to={'/use-ref'}>UseRefHook</Link>
+            <Link className="px-3 py-1 border rounded-xl" to={'/react-query-recipes'}>Tanstack Query</Link>
         </div>
 
 
@@ -75,6 +77,7 @@ function App() {
           </Route>
 
           <Route path="/use-ref" element={<UseRefHook />} />  
+          <Route path="/react-query-recipes" element={<FetchApiReactQuery />} />  
         </Routes>       
      </div>
     </>
